@@ -1,5 +1,6 @@
 // DEPENDENCIES
 const express = require('express')
+const { Sequelize } = require('sequelize')
 const app = express()
 
 // CONFIGURATION / MIDDLEWARE
@@ -13,6 +14,16 @@ app.get('/', (req, res) => {
         message: 'Welcome to the Tour API'
     })
 })
+
+//CONTROLLERS
+const bandsController = require('./controllers/bands_controller')
+app.use('/bands', bandsController)
+
+const eventsController = require('./controllers/event_controller')
+app.use('/events', eventsController)
+
+const stagesController = require('./controllers/stage_controller')
+app.use('stages', stagesController)
 
 // LISTEN
 app.listen(process.env.PORT, () => {

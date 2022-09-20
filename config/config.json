@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "borinquen",
+    "database": "music_tour",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "music_tour_test": {
+    "username": "root",
+    "password": "borinquen",
+    "database": "music_tour",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "music_tour_production": {
+    "username": "root",
+    "password": "borinquen",
+    "database": "music_tour",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
